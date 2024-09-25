@@ -57,6 +57,7 @@ pipeline {
     }
     post {
         always {
+            echo 'TEST'
             echo 'Cleaning up virtual environment'
             script {
                 if (isUnix()) {
